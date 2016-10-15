@@ -24,18 +24,25 @@
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-      </head>
-      <body id="top">
+    </head>      
+    <body id="top">
         <header id="home">
-          <section class="hero2" id="hero2">
-            <div class="container">
-            <div class="row">
-                <div class="col-md-12 col-md-1 text-left">
-                <a href="index.html"><img src="img/banner_mini.png"; alt="Maria Cervantes"></a>
-                  </div>  
-            </div>              
-          </section>
-        </header>
+          <nav class="fixed-nav-bar text-right">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                    <ul class="nav navbar-nav text-right">
+                      <li><a href="index.html" class="maria"><img src="img/banner_mini.png"; alt="Maria Cervantes"></a></li>                      
+                      <li><a href="#process" class="about"> Process </a></li>
+                      <li><a href="#solution"class="skills"> Solution</a></li>
+                      <li><a href="#analysis" class="portfolio"> Analysis</a></li>
+                      <li><a href="#future" class="contact"> Future Enhancements </a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+      </header>
 
       <section class="intro text-center section-padding" id="portfolio">
         <div class="container">
@@ -52,7 +59,7 @@
             </div>
           </div>
 
-<div class="container">
+<div class="container" id="process">
     <div class="col-md-12">   
         <h1 id="timeline">The Process</h1>
     </div>
@@ -256,7 +263,7 @@
 
 
         <section class="portfolio text-center section-padding" id="solution">          
-          <h2>Results</h2>
+          <h2>Solution</h2>
 
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero</p>
           </section>
@@ -294,13 +301,50 @@
           </div>
 
 
-<!-- Timeline example taken from Codepen. Originally submitted by Jason Davis-->
-<!-- Sliding Tags example taken from Codepen. Originally submitted by Thibaut-->
-<!-- Bootstrap Modal example taken from Codepen. Originally submitted by Joseph D. Curtis-->
+        <section class="portfolio text-center section-padding" id="analysis">          
+          <h2>Analysis</h2>
 
-        <section class="portfolio text-center section-padding" id="solution">          
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero</p>
-          <div>
+          </section>
+          <div class="container">
+            <div class="row">
+              <div id="portfolioSlider">
+                    <div class="col-md-6 wp4">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-01.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="text-center">Creative Minds</h2>
+                      <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+                    <div class="col-md-6 wp4 delay-05s">
+                      <div class="overlay-effect effects clearfix">
+                        <div class="img">
+                          <img src="img/portfolio-02.jpg" alt="Portfolio Item">
+                          <div class="overlay">
+                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
+                            <a class="close-overlay hidden">x</a>
+                          </div>
+                        </div>
+                      </div>
+                      <h2 class="text-center">Creative Hearts 1</h2>
+                      <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
+                    </div>
+              </div>
+            </div>
+          </div>
+
+          <section class="portfolio text-center section-padding" id="future">          
+          <h2>Future Enhancements</h2>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero</p>
+          </section>
+
           <span class="slide__price"></span>
           <a href="index.html#portfolio" class="learn-more-btn">Back</a>
           </div>
